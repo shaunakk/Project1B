@@ -1,6 +1,6 @@
-all: project1b.out
+all: main
 
-project1b.out:main.cpp hash24.cpp
+main:main.o hash24.o 
 	g++ -std=c++11 $^ -o $@
 
 clean:
