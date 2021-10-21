@@ -1,7 +1,13 @@
-all: main
+# the compiler: gcc for C program, define as g++ for C++
+	CXX = g++
+# compiler flags:
+#  -g    adds debugging information to the executable file
+#  -Wall turns on most, but not all, compiler warnings
+CXXFLAGS  = -g -Wall
+BINARIES=project1b
 
-main:main.o hash24.o 
-	g++ -std=c++11 $^ -o $@
-
+all: ${BINARIES}
+project1b: main.o hashtable.o 
+	${CXX} $^ -o $@
 clean:
-	rm -f *.out
+	/bin/rm -f ${BINARIES} *.o
