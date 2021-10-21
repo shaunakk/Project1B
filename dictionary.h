@@ -37,7 +37,7 @@ public:
         {
             table[i].createHashmap();
         }
-        //displayStats();
+        displayStats();
     };
     void firstPass(string element)
     {
