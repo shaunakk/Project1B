@@ -93,6 +93,7 @@ public:
             if (table[maxCollisionsIndex].getWords() != nullptr)
                 cout << table[maxCollisionsIndex].getWords()[i] << endl;
         }
+        cout << "Number of hash functions tried:" << endl;
         for (int i = 1; i < 21; i++)
         {
             cout << "# of secondary hash tables trying " << i << " hash functions = " << numberOfTries[i] << endl;
