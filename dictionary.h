@@ -93,13 +93,13 @@ public:
             if (table[maxCollisionsIndex].getWords() != nullptr)
                 cout << table[maxCollisionsIndex].getWords()[i] << endl;
         }
-        // for (int i = 1; i < 21; i++)
-        // {
-        //     cout << "# of secondary hash tables trying " << i << " hash functions = " << numberOfTries[i] << endl;
-        //     averageFunctionsTried += i * numberOfTries[i];
-        // }
-        // averageFunctionsTried /= (size - wordsInBuckets[0] - wordsInBuckets[1]);
-        // cout << "Average # of hash functions tried = " << averageFunctionsTried << endl;
+        for (int i = 1; i < 21; i++)
+        {
+            cout << "# of secondary hash tables trying " << i << " hash functions = " << numberOfTries[i] << endl;
+            averageFunctionsTried += i * numberOfTries[i];
+        }
+        averageFunctionsTried /= (size - wordsInBuckets[0] - wordsInBuckets[1]);
+        cout << "Average # of hash functions tried = " << averageFunctionsTried << endl;
     }
     void find(string query)
     {
