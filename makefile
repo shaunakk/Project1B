@@ -7,7 +7,7 @@ CXXFLAGS  = -g -Wall
 BINARIES=project1b
 
 all: ${BINARIES}
-project1b: main.o hashtable.o 
+project1b: main.o hash24.o 
 	${CXX} $^ -o $@
 clean:
 	/bin/rm -f ${BINARIES} *.o
