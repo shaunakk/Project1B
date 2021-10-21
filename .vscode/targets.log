@@ -1,6 +1,4 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
-make: *** No rule to make target '<list', needed by 'project1b.out'.  Stop.
- 
 # GNU Make 4.2.1
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2016 Free Software Foundation, Inc.
@@ -8,7 +6,7 @@ make: *** No rule to make target '<list', needed by 'project1b.out'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Wed Oct 20 20:14:46 2021
+# Make data base, printed on Wed Oct 20 21:44:09 2021
 
 # Variables
 
@@ -88,6 +86,7 @@ LOGNAME = shaunak
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
 # environment
 NVM_CD_FLAGS = 
+ 
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # automatic
@@ -165,9 +164,9 @@ WSL_DISTRO_NAME = Ubuntu-20.04
 
 # Directories
 
-# . (device 47, inode 581245826907506962): 9 files, no impossibilities.
+# . (device 47, inode 581245826907506962): 14 files, no impossibilities.
 
-# 9 files, no impossibilities in 1 directories.
+# 14 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -175,51 +174,36 @@ WSL_DISTRO_NAME = Ubuntu-20.04
 
 # Files
 
-# Not a target:
-of:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
 all: project1b.out
 #  Command line target.
 #  Implicit rule search has been done.
 #  File does not exist.
-#  File has not been updated.
-
-# Not a target:
-files:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-makefile:
-#  Implicit rule search has been done.
-#  Last modified 2021-10-20 20:07:53.3570568
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
-required:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+makefile:
+#  Implicit rule search has been done.
+#  Last modified 2021-10-20 21:41:21.5186913
+#  File has been updated.
+#  Successfully updated.
 
 # Not a target:
-for:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+main.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2021-10-20 21:39:06.9773119
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+hash24.cpp:
+#  Implicit rule search has been done.
+#  Last modified 2021-10-20 21:39:50.8388243
+#  File has been updated.
+#  Successfully updated.
 
 # Not a target:
 .DEFAULT:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-.cpp:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -231,39 +215,28 @@ clean:
 #  recipe to execute (from 'makefile', line 7):
 	rm -f *.out
 
-# Not a target:
-<list:
-#  Implicit rule search has been done.
-#  File does not exist.
-#  File has not been updated.
-
-# Not a target:
-project1b.out>:
+project1b.out: main.cpp hash24.cpp
 #  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-project1b.out: <list of .cpp files required for project1b.out>
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
+#  Last modified 2021-10-20 21:41:24.6354801
+#  File has been updated.
+#  Successfully updated.
 #  recipe to execute (from 'makefile', line 4):
 	g++ -std=c++11 $^ -o $@
 
 # files hash-table stats:
-# Load=13/1024=1%, Rehash=0, Collisions=0/33=0%
+# Load=8/1024=1%, Rehash=0, Collisions=0/23=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 23 / storage = 210 B / avg = 9 B
-# current buf: size = 8162 B / used = 210 B / count = 23 / avg = 9 B
+# strcache buffers: 1 (0) / strings = 20 / storage = 209 B / avg = 10 B
+# current buf: size = 8162 B / used = 209 B / count = 20 / avg = 10 B
 
-# strcache performance: lookups = 32 / hit rate = 28%
+# strcache performance: lookups = 32 / hit rate = 37%
 # hash-table stats:
-# Load=23/8192=0%, Rehash=0, Collisions=1/32=3%
-# Finished Make data base on Wed Oct 20 20:14:46 2021
+# Load=20/8192=0%, Rehash=0, Collisions=1/32=3%
+# Finished Make data base on Wed Oct 20 21:44:09 2021
 
  

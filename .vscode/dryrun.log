@@ -1,12 +1,5 @@
-make --dry-run --always-make --keep-going --print-directory
+make --dry-run --keep-going --print-directory
 make: Entering directory '/mnt/d/Google Drive (shaunak@ucsb.edu)/Fall 2021/CMPSC 130A/Project1B'
-g++        -o .cpp
+make: Nothing to be done for 'all'.
 make: Leaving directory '/mnt/d/Google Drive (shaunak@ucsb.edu)/Fall 2021/CMPSC 130A/Project1B'
- 
-make: *** No rule to make target '<list', needed by 'project1b.out'.
-make: *** No rule to make target 'of', needed by 'project1b.out'.
-make: *** No rule to make target 'files', needed by 'project1b.out'.
-make: *** No rule to make target 'required', needed by 'project1b.out'.
-make: *** No rule to make target 'for', needed by 'project1b.out'.
-make: *** No rule to make target 'project1b.out>', needed by 'project1b.out'.
  
