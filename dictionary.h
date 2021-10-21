@@ -76,11 +76,13 @@ public:
                 wordsInBuckets[bucketSize] += 1;
             totalWords += bucketSize;
         }
+        if (maxCollisions == 1)
+            maxCollisions = 0;
         hash.dump();
         cout
             << "Number of words = " << totalWords << endl
             << "Table size = " << size << endl
-            << "Max collisions = " << max(maxCollisions, 1) << endl;
+            << "Max collisions = " << maxCollisions << endl;
         for (int i = 0; i < 21; i++)
         {
             cout << "# of primary slots with " << i << " words = " << wordsInBuckets[i] << endl;
